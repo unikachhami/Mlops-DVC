@@ -6,7 +6,13 @@ dict = {
     'city':['Germany','Brazil','Turkey']
 }
 
+new_dict = {'name':'Sanu','city':'Hongkong'}
+
+
 df = pd.DataFrame(dict)
+
+df.loc[len(df)] = new_dict
+
 
 data_dir = 'data'
 os.makedirs(data_dir,exist_ok=True)
